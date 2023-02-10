@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/displayPets.css">
+    <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
     <title>The Fashion Pet | Register</title>
 </head>
 <body>
@@ -52,6 +55,16 @@
                     <option value="other">Other</option>
               </select>
             </div>
+
+            <div class="mb-3">
+                <label class="form-label">Guardian's name:</label>
+                <input class="form-control" placeholder="Write the name" type="text" id="txtGuardian">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Telephone:</label>
+                <input class="form-control" placeholder="Write the name" type="text" id="txtTelephone">
+            </div>
             
             <div class="mb-3">
                 <label class="form-label">Service:</label>
@@ -64,13 +77,44 @@
               </select>
             </div>
 
-            <button onclick="register()">Add pet</button>
+            <button class="btn btn-sm btn-primary" onclick="register()">Add pet</button>
         </div>
 
+        <div id="cardPet">
+
+        </div>
+
+        <div class="ms-5 mt-3">
+            <input id="txtSearch" type="search" placeholder="Write the name of a pet">
+            <button class="btn btn-sm btn-primary" onclick="searchPet()">Search</button>
+        </div>
+
+        <div id="petsTable" class="container">
+            <table class="table table-striped">
+                <thead class="table-primary">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Breed</th>
+                    <th>Type</th>
+                    <th>Guardian</th>
+                    <th>Phone</th>
+                    <th>Service</th>
+                    <th>Options</th>
+                </thead>
+
+                <tbody id="tablePet">
+                
+                </tbody>
+            </table>
+
+        </div>
     </main>
     <footer>
      <label id="workingHours"></label>
     </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/displayPets.js"></script>
     <script src="scripts/register.js"></script>
 </body>
 </html>
