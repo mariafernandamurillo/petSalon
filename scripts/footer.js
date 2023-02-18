@@ -16,7 +16,7 @@ let petSalon = {
 }
 
 function bookAppointment(){
-    window.location.href="services.html";
+    window.location.href="register.html";
 }
 
 function displayFooter(){
