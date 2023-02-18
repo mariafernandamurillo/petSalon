@@ -1,0 +1,4 @@
+function seeMore() {
+    let paragraph = document.getElementById("extraP");
+    paragraph.textContent = "Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Nascetur ridiculus mus mauris vitae ultricies leo. Gravida quis blandit turpis cursus. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Cras adipiscing enim eu turpis. Ut faucibus pulvinar elementum integer enim neque volutpat. In pellentesque massa placerat duis ultricies lacus. Facilisi cras fermentum odio eu feugiat pretium. Adipiscing elit pellentesque habitant morbi. Massa tincidunt nunc pulvinar sapien.";
+}

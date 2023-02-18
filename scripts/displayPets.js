@@ -9,7 +9,7 @@ function displayPetCards(){
         //create the card
         card += `
         <div class="pet">
-            <p class="petsName">${pet.name}</p>
+            <p class="subTitle">${pet.name}</p>
             <p><span class="cardAttributes"> Age:</span> ${pet.age}</p>
             <p><span class="cardAttributes"> Gender:</span> ${pet.gender}</p>
             <p><span class="cardAttributes"> Breed:</span> ${pet.breed}</p>

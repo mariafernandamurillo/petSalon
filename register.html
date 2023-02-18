@@ -1,90 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/register.css">
-    <link rel="stylesheet" href="styles/displayPets.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
+
     <title>The Fashion Pet | Register</title>
 </head>
+
 <body>
-    <h1>The Fashion Pet</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="register.html">Register</a>
-    </nav>
+    <div class="menuWeb">
+        <div class="logoContainer">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+        </div>
+
+        <div class="petSalon">
+            <h1 class="title" style="margin: 0;">Pet Salon</h1>
+            <p class="sub">Your pet, our passion.</p>
+        </div>
+
+        <nav class="navWeb">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="register.html" style="background: #ffffff; color: #333333; border:solid 1px #16B4F2;">Register</a>
+        </nav>
+
+    </div>
+
+    <div class="menuMobile">
+        <div class="logoMenu">
+            <div class="logoMobileContainer">
+                <a href="index.html"><img class="logoMobile" src="images/PetSalon_Logo.png" alt="logo"></a>
+            </div>
+            <a class="btnMenuMobile" onclick="btnMenuMobile()"><img class="iconoMenuMobile"
+                    src="images/menu_mobile.png"></a>
+        </div>
+
+        <nav id="navMobile" class="hidden">
+            <a class="aMobile" href="index.html">Home</a>
+            <a class="aMobile" href="about.html">About us</a>
+            <a class="aMobile" href="services.html">Services</a>
+            <a class="aMobile" href="register.html">Register</a>
+        </nav>
+    </div>
+
     <main>
-        <h2>Register anew pet</h2>
-        <p>Pets in the salon: <span id="amountOfPets"> </span></p>
-        <div class="container">
-            <div class="mb-3">
-                <label class="form-label">Name:</label>
-                <input class="form-control" placeholder="Write the name" type="text" id="txtName">
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label">Age:</label>
-                <input class="form-control" placeholder="Write the age in years" type="number" id="txtAge">
-            </div>
+        <div class="form">
+            <p class="subTitle">Pets in the salon: <span id="amountOfPets" style="color: #032330;"> </span></p>
+            <p class="title">Register a new pet</p>
+            <div class="container">
+                <div class="mb-3">
+                    <label class="form-label">Name:</label>
+                    <input class="form-control" placeholder="Write the name" type="text" id="txtName">
+                </div>
 
-            <div class="mb-3">
-                <label class="form-label">Gender:</label>
-                <select class="form-control" id="txtGender">
-                    <option value="" disable selected>Select a gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-              </select>
-            </div>
-     
-            <div class="mb-3">
-                <label class="form-label">Breed:</label>
-                <input class="form-control" placeholder="Write the name" type="text" id="txtBreed">
-            </div>
+                <div class="mb-3">
+                    <label class="form-label">Age:</label>
+                    <input class="form-control" placeholder="Write the age in years" type="number" id="txtAge">
+                </div>
 
-            <div class="mb-3">
-                <label class="form-label">Type of pet:</label>
-                <select class="form-control" id="typeOfPet">
-                    <option value="" disable selected>Select a type of pet</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="other">Other</option>
-              </select>
-            </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender:</label>
+                    <select class="form-control" id="txtGender">
+                        <option value="" disable selected>Select a gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
 
-            <div class="mb-3">
-                <label class="form-label">Guardian's name:</label>
-                <input class="form-control" placeholder="Write the name" type="text" id="txtGuardian">
-            </div>
+                <div class="mb-3">
+                    <label class="form-label">Breed:</label>
+                    <input class="form-control" placeholder="Write the name" type="text" id="txtBreed">
+                </div>
 
-            <div class="mb-3">
-                <label class="form-label">Telephone:</label>
-                <input class="form-control" placeholder="Write the name" type="text" id="txtTelephone">
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label">Service:</label>
-                <select class="form-control" name="services" id="services">
-                    <option value="" disable selected>Select a service</option>
-                    <option value="hairCut">Hair cut</option>
-                    <option value="bath">Bath</option>
-                    <option value="spa">Spa</option>
-                    <option value="vaccines">Vaccines</option>
-              </select>
-            </div>
+                <div class="mb-3">
+                    <label class="form-label">Type of pet:</label>
+                    <select class="form-control" id="typeOfPet">
+                        <option value="" disable selected>Select a type of pet</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-            <button class="btn btn-sm btn-primary" onclick="register()">Add pet</button>
+                <div class="mb-3">
+                    <label class="form-label">Guardian's name:</label>
+                    <input class="form-control" placeholder="Write the name" type="text" id="txtGuardian">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Telephone:</label>
+                    <input class="form-control" placeholder="Write the name" type="text" id="txtTelephone">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Service:</label>
+                    <select class="form-control" name="services" id="services">
+                        <option value="" disable selected>Select a service</option>
+                        <option value="Day Care">Day Care</option>
+                        <option value="spa">Spa</option>
+                        <option value="vaccines">Vaccines</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-sm btn-primary" onclick="register()">Add pet</button>
+            </div>
         </div>
 
-        <div id="cardPet">
+        <div class="cardsPetsContainer">
+            <p class="title extraMargin">Pets in the salon: <span id="amountfPets" style="color: #F23E16;"> </span></p>
 
+            <div id="cardPet">
+
+            </div>
         </div>
 
-        <div class="ms-5 mt-3">
+        <!--<div class="ms-5 mt-3">
             <input id="txtSearch" type="search" placeholder="Write the name of a pet">
             <button class="btn btn-sm btn-primary" onclick="searchPet()">Search</button>
         </div>
@@ -108,13 +147,61 @@
                 </tbody>
             </table>
 
-        </div>
+        </div>-->
     </main>
-    <footer>
-     <label id="workingHours"></label>
+
+    <footer class="footerSyle">
+
+        <div class="sociaLogo">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+            </div>
+        </div>
+
+        <label id="workingHours"></label>
+
+        <div class="menuFoteer">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </div>
+
     </footer>
+
+    <footer class="footerMobile">
+
+        <label id="workingHours"> The Pet Salon it opens at 9:00 a.m. to 9:00 p.m.</label>
+
+        <div class="menuFooterContainer">
+            <div class="sociaLogo">
+                <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                    <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                    <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+                </div>
+            </div>
+
+            <div class="menuFoteer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+
+    </footer>
+
     <script src="scripts/footer.js"></script>
     <script src="scripts/displayPets.js"></script>
     <script src="scripts/register.js"></script>
+    <script src="scripts/header.js"></script>
 </body>
+
 </html>

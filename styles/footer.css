@@ -1,0 +1,61 @@
+.footerSyle {
+    background: #032330;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sociaLogo {
+    margin-left: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialMedia img {
+    width: 20px;
+    margin: 7px;
+}
+
+.menuFoteer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.footerMobile{
+    display: none;
+}
+
+/*Resposive*/
+@media(max-width:1014px) {
+    .footerSyle {
+        display: none;
+    }
+
+    .footerMobile {
+        background: #032330;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .menuFooterContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+    }
+}

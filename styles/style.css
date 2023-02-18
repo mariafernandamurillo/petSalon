@@ -1,0 +1,212 @@
+@font-face{
+    font-family: montserratRegular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: LobsterRegular;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face{
+    font-family: MontserratItalic;
+    src: url(../fonts/Montserrat-Italic.ttf);
+}
+
+body{
+    font-family: montserratRegular;
+    color: #032330;
+}
+
+.title{
+    font-family: LobsterRegular;
+    font-size: 40px;
+}
+
+.sub{
+    font-family: MontserratItalic;
+    font-size: 16px;
+    text-align: right;
+}
+
+.subTitle{
+    font-weight: 600;
+    font-size: 20px;
+    color: #F23E16;
+}
+
+.sub-Title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text{
+    line-height: 27px;
+    margin: 30px 0 30px 0;
+}
+
+a{
+    color: #957D04;
+    font-weight: 600;
+    text-decoration: underline 1.2px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/*MENU*/
+.menuWeb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.logo_web{
+    width: 130px;
+    margin: 20px;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navWeb{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;  
+}
+
+.navWeb a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: #16B4F2;
+    text-align: center;
+    padding: 6px;
+    width: 120px;
+    margin: 2px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.navWeb a:last-child{
+    margin-right: 20px;
+}
+
+.navWeb a:hover{
+    background: #CFEFFC;
+    color: #032330;
+}
+
+/*menuMobile*/
+.menuMobile{
+    display: none;
+    
+}
+
+.navMobile a{
+    color:#032330;
+    font-weight: normal;
+    padding: 5px 15px 5px 15px;
+    font-size: 19px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navMobile a:hover{
+    background: #16B4F2;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.iconoMenuMobile{
+    width: 40px;
+}
+
+/*Buttons*/
+.blueButton{
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: #16B4F2;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.blueButton:hover{
+    background: #CFEFFC;
+    color: #032330;
+}
+
+.hidden{
+    display: none;
+}
+
+/*Resposive*/
+@media(max-width:1014px){
+    .menuWeb{
+        display: none;
+    }
+    .menuMobile{
+        display: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoMenu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logoMobile{
+        margin: 20px 0px 0px 30px;
+        width: 130px;
+    }
+
+    .logoMobileContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .navMobile{
+        display: flex;
+        flex-direction: column;
+    }
+        
+    /*Text*/
+    .textDescription p{
+        margin: 0px;
+    }
+
+    .textDescription p:nth-child(2){
+        font-weight: 600;
+        background-color: #FEF6CD;
+        width:max-content;
+        padding: 10px;
+     }
+
+    .textSecondaryDescriptionContainer p{
+        margin: none;
+    }
+
+    .textSecondaryDescriptionContainer{
+        padding: 0px 20px 0px 20px;
+    }
+ }

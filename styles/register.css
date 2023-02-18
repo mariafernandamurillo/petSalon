@@ -2,3 +2,63 @@
     background-color: rgb(255, 216, 216);
     border: 1px solid rgb(235, 168, 168);
 }
+
+.form p{
+    margin-left: 50px;
+}
+
+.extraMargin{
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+
+/*Display pets*/
+
+.cardsPetsContainer{
+    background: #E7F7FE;
+    padding-bottom: 50px;
+}
+
+.pet{
+    background-color: #CFEFFC;
+    padding: 5%;
+    width: 300px;
+    height: 370px;
+    border-radius: 5%;
+}
+
+.cardAttributes{
+    font-weight: bold;
+}
+
+
+#cardPet{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: 50px;
+}
+
+#petsTable{
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(max-width:1014px){
+
+    .cardsPetsContainer{
+        padding-bottom: 50px;
+    }
+
+    #cardPet{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-left: 50px;
+    }
+    
+}

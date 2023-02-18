@@ -15,9 +15,12 @@ let petSalon = {
     ]
 }
 
+function bookAppointment(){
+    window.location.href="services.html";
+}
+
 function displayFooter(){
-    document.getElementById("workingHours").innerHTML=`
-    ${petSalon.name} it opens at ${petSalon.workingHours.open} to ${petSalon.workingHours.close}`;
+    document.getElementById("workingHours").innerHTML=`The Pet Salon it opens at ${petSalon.workingHours.open} to ${petSalon.workingHours.close}`;
 }
 
 function initFooter(){

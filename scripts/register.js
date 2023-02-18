@@ -36,11 +36,14 @@ let inputServices = document.getElementById("services");
 
 function amountOfPets(){
     document.getElementById("amountOfPets").innerHTML = petSalon.pets.length;
+    document.getElementById("amountfPets").innerHTML = petSalon.pets.length;
     if(petSalon.pets.length == 0)
     {
         document.getElementById("amountOfPets").innerHTML = "0";
+        document.getElementById("amountfPets").innerHTML = "0";
     }else{
         document.getElementById("amountOfPets").innerHTML = petSalon.pets.length;
+        document.getElementById("amountfPets").innerHTML = petSalon.pets.length;
     }
 }
 
@@ -125,7 +128,8 @@ function register(){
         clearForm();
         amountOfPets();
     }
-    displayPetTable();
+    //displayPetTable();
+    displayPetCards();
 }
 
 function init(){
@@ -141,8 +145,8 @@ function init(){
     petSalon.pets.push(scooby, walter, tato);//add the pets in the array
 
     amountOfPets();
-   // displayPetCards();
-    displayPetTable();
+    displayPetCards();
+    //displayPetTable();
 }
 
 window.onload = init();
@@ -150,5 +154,4 @@ window.onload = init();
 //displayPetsNames();
 /*console.log(petSalon.pets[0]); //displaying the register 1 of the object pets
 console.log(petSalon.pets.length); //displaying the number of pets
-console.log(petSalon.pets[2].name); //displaying the name*/
-
+console.log(petSalon.pets[2].name); //displaying the name*/ 

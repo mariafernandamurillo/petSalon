@@ -1,25 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fashion Pet | Services</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/services.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
+
+    <title>About</title>
 </head>
+
 <body>
-    <h1>The Fashion Pet</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="register.html">Register</a>
-    </nav>
+
+    <div class="menuWeb">
+        <div class="logoContainer">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+        </div>
+
+        <div class="petSalon">
+            <h1 class="title" style="margin: 0;">Pet Salon</h1>
+            <p class="sub">Your pet, our passion.</p>
+        </div>
+
+        <nav class="navWeb">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" style="background: #ffffff; color: #333333; border:solid 1px #16B4F2;">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+    </div>
+
+    <div class="menuMobile">
+        <div class="logoMenu">
+            <div class="logoMobileContainer">
+                <a href="index.html"><img class="logoMobile" src="images/PetSalon_Logo.png" alt="logo"></a>
+            </div>
+            <a class="btnMenuMobile" onclick="btnMenuMobile()"><img class="iconoMenuMobile"
+                    src="images/menu_mobile.png"></a>
+        </div>
+
+        <nav id="navMobile" class="hidden">
+            <a class="aMobile" href="index.html">Home</a>
+            <a class="aMobile" href="about.html">About us</a>
+            <a class="aMobile" href="services.html">Services</a>
+            <a class="aMobile" href="register.html">Register</a>
+        </nav>
+    </div>
+
     <main>
-        
+        <div class="collageContainer">
+            <img src="images/pet_3.jpg" alt="img1">
+            <img src="images/pet_6.jpg" alt="img1">
+            <img src="images/pet_8.jpg" alt="img1">
+            <img src="images/pet_9.jpg" alt="img1">
+        </div>
+
+        <div class="servicesContainer">
+            <p class="title">Our services</p>
+
+            <div class="servicesDescription">
+                <div class="dayCare">
+                    <img src="images/dayCare.png" alt="Day care">
+                    <p class="subTitle">Day Care</p>
+                    <p class="text">Pet Salon Day Care gives your dog a place to play and learn in a safe and loving
+                        environment.</p>
+                </div>
+
+                <div class="spa">
+                    <img src="images/spa.png" alt="Spa">
+                    <p class="subTitle">Spa</p>
+                    <p class="text">We offer everything you need to keep your dog clean and healthy at the Pet Salon &
+                        Spa.</p>
+                </div>
+
+                <div class="vaccines">
+                    <img src="images/vaccines.png" alt="Vaccines">
+                    <p class="subTitle">Vaccines</p>
+                    <p class="text">Any time your pet needs vaccination services, our licensed vets are here to help.
+                    </p>
+                </div>
+
+            </div>
+            <div class="reviewContainer">
+
+                <p class="title">Happy clients</p>
+                <p class="subTitle">Reviews</p>
+
+                <div class="reviews">
+                    <div>
+                        <img src="images/pet_2.jpg" alt="vet">
+                    </div>
+                    
+                    <div class="reviewDescription">
+                        <div class="client">
+                            <p class="sub-Title"> Tato</p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <p class="text">I came home happy and relaxed after a day of activities and socializing. </p>
+                    </div>
+
+                    <div>
+                        <img src="images/pet_3.jpg" alt="vet">
+                    </div>
+
+                    <div class="reviewDescription">
+                        <div class="client">
+                            <p class="sub-Title"> Walter</p>
+                            <p class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
+                        <p class="text"> I can't wait to go back each time! But please, give me more chicken.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
+
+    <footer class="footerSyle">
+
+        <div class="sociaLogo">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+            </div>
+        </div>
+
         <label id="workingHours"></label>
+
+        <div class="menuFoteer">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </div>
+
     </footer>
+
+    <footer class="footerMobile">
+
+        <label id="workingHours"> The Pet Salon it opens at 9:00 a.m. to 9:00 p.m.</label>
+
+        <div class="menuFooterContainer">
+            <div class="sociaLogo">
+                <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                    <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                    <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+                </div>
+            </div>
+
+            <div class="menuFoteer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+
+    </footer>
+
+
     <script src="scripts/footer.js"></script>
+    <script src="scripts/header.js"></script>
+
 </body>
+
 </html>

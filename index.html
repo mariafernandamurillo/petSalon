@@ -1,25 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fashion Pet | Home</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
+
+    <title>Home</title>
 </head>
+
 <body>
-    <h1>The Fashion Pet</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="register.html">Register</a>
-    </nav>
+
+    <div class="menuWeb">
+        <div class="logoContainer">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+        </div>
+
+        <div class="petSalon">
+            <h1 class="title" style="margin: 0;">Pet Salon</h1>
+            <p class="sub">Your pet, our passion.</p>
+        </div>
+
+        <nav class="navWeb">
+            <a href="index.html" style="background: #ffffff; color: #333333; border:solid 1px #16B4F2;">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+    </div>
+
+    <div class="menuMobile">
+        <div class="logoMenu">
+            <div class="logoMobileContainer">
+                <a href="index.html"><img class="logoMobile" src="images/PetSalon_Logo.png" alt="logo"></a>
+            </div>
+            <a class="btnMenuMobile" onclick="btnMenuMobile()"><img class="iconoMenuMobile"
+                    src="images/menu_mobile.png"></a>
+        </div>
+
+        <nav id="navMobile" class="hidden">
+            <a class="aMobile" href="index.html">Home</a>
+            <a class="aMobile" href="about.html">About us</a>
+            <a class="aMobile" href="services.html">Services</a>
+            <a class="aMobile" href="register.html">Register</a>
+        </nav>
+    </div>
+
     <main>
-        
+        <div class="description">
+            <div class="coverPictureContainer">
+                <img class="coverPicture" src="images/pet_1.jpg" alt="cover picture">
+            </div>
+
+            <div class="textDescription">
+                <p class="title">Taking care of your pet!</p>
+                <p style="margin: 15px;"> Day care | Spa | Vaccines</p>
+                <button class="blueButton" onclick="bookAppointment()">Book an appointment</button>
+            </div>
+        </div>
+
+        <div class="secondaryDescription">
+
+            <div class="sidePictureContainer">
+                <img class="sidePicture" src="images/pet_15.jpg">
+            </div>
+
+            <div class="textSecondaryDescriptionContainer">
+                <h2 class="title">You and your pet</h2>
+                <h3 class="subTitle">Our priority</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas. Pretium aenean
+                    pharetra magna ac placerat vestibulum lectus mauris. Aenean vel elit scelerisque mauris pellentesque
+                    pulvinar pellentesque habitant morbi. Nascetur ridiculus mus mauris vitae ultricies leo. Gravida
+                    quis blandit turpis cursus. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Ut enim
+                    blandit volutpat maecenas volutpat blandit aliquam etiam. Cras adipiscing enim eu turpis. Ut
+                    faucibus pulvinar elementum integer enim neque volutpat. In pellentesque massa placerat duis
+                    ultricies lacus. Facilisi cras fermentum odio eu feugiat pretium. Adipiscing elit pellentesque
+                    habitant morbi. Massa tincidunt nunc pulvinar sapien.</p>
+
+                <p id="extraP" class="text">
+
+                </p>
+
+                <a id="seeMore" onclick="seeMore()">See more from us</a>
+            </div>
+        </div>
+
     </main>
-    <footer>
+
+    <footer class="footerSyle">
+
+        <div class="sociaLogo">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+            </div>
+        </div>
+
         <label id="workingHours"></label>
+
+        <div class="menuFoteer">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </div>
+
     </footer>
+
+    <footer class="footerMobile">
+
+        <label id="workingHours"> The Pet Salon it opens at 9:00 a.m. to 9:00 p.m.</label>
+
+        <div class="menuFooterContainer">
+            <div class="sociaLogo">
+                <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+    
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                    <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                    <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+                </div>
+            </div>
+    
+            <div class="menuFoteer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+
+    </footer>
+    
+
     <script src="scripts/footer.js"></script>
+    <script src="scripts/home.js"></script>
+    <script src="scripts/header.js"></script>
+
 </body>
+
 </html>

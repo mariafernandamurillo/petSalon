@@ -1,25 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fashion Pet | About</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81b8868fb1.js" crossorigin="anonymous"></script>
+
+    <title>About</title>
 </head>
+
 <body>
-    <h1>The Fashion Pet</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="register.html">Register</a>
-    </nav>
+
+    <div class="menuWeb">
+        <div class="logoContainer">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+        </div>
+
+        <div class="petSalon">
+            <h1 class="title" style="margin: 0;">Pet Salon</h1>
+            <p class="sub">Your pet, our passion.</p>
+        </div>
+
+        <nav class="navWeb">
+            <a href="index.html">Home</a>
+            <a href="about.html" style="background: #ffffff; color: #333333; border:solid 1px #16B4F2;">About</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+    </div>
+
+    <div class="menuMobile">
+        <div class="logoMenu">
+            <div class="logoMobileContainer">
+                <a href="index.html"><img class="logoMobile" src="images/PetSalon_Logo.png" alt="logo"></a>
+            </div>
+            <a class="btnMenuMobile" onclick="btnMenuMobile()"><img class="iconoMenuMobile"
+                    src="images/menu_mobile.png"></a>
+        </div>
+
+        <nav id="navMobile" class="hidden">
+            <a class="aMobile" href="index.html">Home</a>
+            <a class="aMobile" href="about.html">About us</a>
+            <a class="aMobile" href="services.html">Services</a>
+            <a class="aMobile" href="register.html">Register</a>
+        </nav>
+    </div>
+
     <main>
-        
+        <div class="aboutContainer">
+            <div class="aboutDescription">
+                <h1 class="title">Pet Salon</h1>
+                <h2 class="subTitle">Your pet, our passion.</h2>
+                <p class="text">There’s nothing like snuggling with your pets when they’re soft and clean and smell
+                    nice. We offer everything you need to keep your pet clean, healthy, and comfortable at the Pet
+                    Salon. From a simple bath to an elaborate grooming treatment, our expert groomers focus on creating
+                    a calm and relaxing experience your pet can enjoy. Enrichment activities can be added to help your
+                    pet relax even more and during their spa day.</p>
+                <p class="text">All pets are unique. Just like humans, your pet deserves personalized grooming for their
+                    size, breed, coat type, and condition. For this reason, prices, products, and services vary. Please
+                    ask an associate for details.</p>
+            </div>
+
+            <div class="contactInfoContainer">
+                <h2 class="subTitle">Pet Salon</h2>
+                <p class="text"> <i class="fa-solid fa-location-dot"></i> 8001 Harper Dr NE, Albuquerque, New York. PC:
+                    87111.</p>
+                <a>Get direction</a>
+
+                <div class="contact">
+                    <p class="sub-Title">(505) 823-9821</p>
+                    <p class="text">petsalon@contact.com</p>
+                </div>
+
+                <div class="hourButton">
+                    <p class="text horario">Open at 9:00 a.m. to 9:00 p.m.</p>
+                    <button class="blueButton" onclick="bookAppointment()">Book an appointment</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="team">
+            <p class="title">Our team</p>
+            <p class="subTitle">Taking care of your pet!</p>
+
+            <div class="groomer">
+                <img src="images/gommer.jpg" alt="groomer">
+
+                <div class="groomerDescription">
+                    <p class="sub-Title"><i class="fa-solid fa-scissors"></i> Arianna</p>
+                    <p class="text">My name is Arianna and I’ve been a dog and cat Groomer for 6 years. At my former salon, I started out as a Bather and worked my way up to Groomer and then Salon Manager. I began working at Pet Salon in December of 2020. I love grooming and I continue to learn new things every day. I have 2 dogs- Rocky, a Pitt/Mastiff mix and Gir, a Terrier mix. I also have a cat named Voodoo & a variety of other smaller animals and reptiles- they are all my babies.</p>
+                </div>
+                
+            </div>
+
+            <div class="vet">
+                <img src="images/doctor.jpg" alt="vet">
+
+                <div class="vetDescription">
+                    <p class="sub-Title"><i class="fa-solid fa-user-doctor"></i> Luis</p>
+                    <p class="text">Tellus rutrum tellus pellentesque eu tincidunt. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Mauris a diam maecenas sed enim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Sit amet mattis vulputate enim. Enim tortor at auctor urna. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim.</p>
+                </div>
+            </div>
+
+        </div>
     </main>
-    <footer>
+
+    <footer class="footerSyle">
+
+        <div class="sociaLogo">
+            <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+            </div>
+        </div>
+
         <label id="workingHours"></label>
+
+        <div class="menuFoteer">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </div>
+
     </footer>
+
+    <footer class="footerMobile">
+
+        <label id="workingHours"> The Pet Salon it opens at 9:00 a.m. to 9:00 p.m.</label>
+
+        <div class="menuFooterContainer">
+            <div class="sociaLogo">
+                <a href="index.html"><img class="logo_web" src="images/PetSalon_Logo.png" alt="logo"></a>
+
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/" target=”_blank”><img src="images/fb_icon.png"></a>
+                    <a href="https://www.instagram.com/" target=”_blank”><img src="images/ig_icon.png"></a>
+                    <a href="https://web.whatsapp.com/" target=”_blank”><img src="images/wa_icon.png"></a>
+                </div>
+            </div>
+
+            <div class="menuFoteer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+
+    </footer>
+
+
     <script src="scripts/footer.js"></script>
+    <script src="scripts/header.js"></script>
+
 </body>
+
 </html>
